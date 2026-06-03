@@ -1,0 +1,12 @@
+1:install venv ....go to anaconda prompt : type : conda create -p ./venv python=3.10 -y
+
+2:type: conda activate venv/ 
+
+3:pip install -r requirements.txt
+
+
+#What to do in env file
+ 1 : make api's 
+ 2 : Getlangchainapikey from langsmith 
+ 3 : get open api key from open ai api key 
+ 4 : langchain project is : apikeywithopenai 
