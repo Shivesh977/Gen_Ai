@@ -10,3 +10,17 @@
  2 : Getlangchainapikey from langsmith 
  3 : get open api key from open ai api key 
  4 : langchain project is : apikeywithopenai 
+
+
+
+
+
+
+
+# how to initialize updated langchain 06_updated_langchain  : follow these commands in powershell 
+
+1 :uv init
+2: uv venv : to create a virtual environment 
+3: .venv\Scripts\activate : to activate virtual environment 
+
+
