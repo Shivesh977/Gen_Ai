@@ -97,7 +97,7 @@ if api_key:
                     ("system", system_prompt),
                     MessagesPlaceholder("chat_history"),
                     ("human", "{input}"),
-                ]
+                ]   
             )
         
         question_answer_chain=create_stuff_documents_chain(llm,qa_prompt)
