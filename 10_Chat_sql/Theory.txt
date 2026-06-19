@@ -1,0 +1,10 @@
+An SQL Agent can:
+    Understand user questions.
+    Convert them into SQL queries.
+    Run queries on database.
+    Return answers in natural language.
+
+User asks : How many students are there?
+agent generates : SELECT COUNT(*) FROM students;
+
+
