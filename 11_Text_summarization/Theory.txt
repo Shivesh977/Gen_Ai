@@ -1,0 +1,60 @@
+1. Stuff Documents Chain
+    How it works:
+    All documents are combined ("stuffed") into a single prompt and sent to the LLM.
+
+                Document 1
+                Document 2
+                Document 3
+                    │
+                    ▼
+                Combine Everything
+                    │
+                    ▼
+                    LLM
+                    │
+                    ▼
+                Summary
+
+2. Map Reduce Chain:
+    Used when documents are too large.
+    How it works:
+    Each chunk is summarized independently. 
+            Chunk1 ──► LLM ──► Summary1
+            Chunk2 ──► LLM ──► Summary2
+            Chunk3 ──► LLM ──► Summary3
+
+            Summary1
+            Summary2
+            Summary3
+                │
+                ▼
+                LLM
+                │
+                ▼
+            Final Summary
+
+3. Refine Chain:
+    Instead of summarizing chunks independently, it builds the summary gradually.
+            Chunk1
+            │
+            ▼
+            LLM
+            │
+            ▼
+            Summary1
+
+            Summary1 + Chunk2
+                    │
+                    ▼
+                LLM
+                    │
+                    ▼
+            Summary2
+
+            Summary2 + Chunk3
+                    │
+                    ▼
+                LLM
+                    │
+                    ▼
+            Final Summary
